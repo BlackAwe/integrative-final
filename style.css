@@ -10,9 +10,80 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
+.nav-link {
+  padding: 10px 15px;
+}
+
+.nav-link:hover {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+}
+
+.nav-item.active .nav-link {
+  color: #007bff;
+  background-color: #e9ecef;
+  border-radius: 10px;
+}
+
+.navbar-nav {
+  padding: 1rem 0; /* Adjust as needed */
+}
+
+.navbar-brand {
+  padding-right: 1rem;
+  color: #e9ecef;
+}
+
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+}
+
+.navbar-toggler-icon {
+  filter: invert(100%);
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: none;
+  background-color: #f8f9fa;
+}
+
+.navbar-toggler:hover {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+}
+
+.nav-link:active {
+  background-color: #e9ecef;
+  color: #007bff;
+}
+
 .main-header {
-  background-color: #0081a7;
   color: white;
+}
+
+.header-title {
+  font-size: 2rem;
+  color: white;
+}
+
+.header-subtitle {
+  font-size: 1rem;
+  color: white;
+}
+
+.main-header-container {
+  background-color: wheat;
+  height: 965px;
+  background-image: url(https://i.pinimg.com/564x/9a/6a/fd/9a6afdcc7761b11cc3669b0900f649fe.jpg);
+  background-size: cover;
+}
+
+.title-text {
+  margin-top: 300px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .lead {
@@ -62,7 +133,7 @@ body {
 }
 
 .footer-container {
-  background-color: #0081a7;
+  background-color: #072a9f;
   padding-top: 100px;
   padding-bottom: 100px;
   color: white;
@@ -88,4 +159,54 @@ a:link,
 a:visited {
   color: white;
   text-decoration: none;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media only screen and (max-width: 35.998rem) {
+  .header-title {
+    font-size: 2.5rem;
+  }
+  .header-subtitle {
+    font-size: 1.25rem;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (min-width: 36rem) {
+  .header-title {
+    font-size: 3rem;
+  }
+  .header-subtitle {
+    font-size: 1.5rem;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 48rem) {
+  .header-title {
+    font-size: 3.5rem;
+  }
+  .header-subtitle {
+    font-size: 1.75rem;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 62.123rem) {
+  .header-title {
+    font-size: 4rem;
+  }
+  .header-subtitle {
+    font-size: 2rem;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 75rem) {
+  .header-title {
+    font-size: 4.5rem;
+  }
+  .header-subtitle {
+    font-size: 2.25rem;
+  }
 }
