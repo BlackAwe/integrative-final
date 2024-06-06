@@ -111,6 +111,13 @@ body {
   margin-bottom: 50px;
 }
 
+.destination-button {
+  background-color: transparent;
+  color: white;
+  border-style: none;
+  text-shadow: 2px 2px 5px #072a9f;
+}
+
 .content-container {
   margin-bottom: 200px;
 }
@@ -209,4 +216,13 @@ a:visited {
   .header-subtitle {
     font-size: 2.25rem;
   }
+}
+
+.image-card-container {
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.image-card-container:hover {
+  transform: translateY(-10px);
 }
