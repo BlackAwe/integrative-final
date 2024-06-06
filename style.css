@@ -28,7 +28,7 @@ hr {
 }
 
 .navbar-nav {
-  padding: 1rem 0; /* Adjust as needed */
+  padding: 1rem 0;
 }
 
 .navbar-brand {
@@ -123,6 +123,13 @@ hr {
 
 .destination-info {
   margin-bottom: 50px;
+}
+
+.destination-button {
+  background-color: transparent;
+  color: white;
+  border-style: none;
+  text-shadow: 2px 2px 5px #072a9f;
 }
 
 .content-container {
@@ -276,4 +283,22 @@ hr {
   .header-subtitle {
     font-size: 2.25rem;
   }
+}
+
+.image-card-container {
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.image-card-container:hover {
+  transform: translateY(-10px);
+}
+
+.footer-container {
+  color: white;
+  background-color: #072a9f;
+}
+
+.footer-icon {
+  fill: white;
 }
