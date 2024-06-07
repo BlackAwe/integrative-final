@@ -135,6 +135,13 @@ hr {
   text-shadow: 2px 2px 5px #072a9f;
 }
 
+.todo-content {
+  font-family: 'Libre Franklin', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .image-card-container {
   cursor: pointer;
   transition: all 0.5s ease-in-out;
@@ -280,7 +287,6 @@ hr {
 }
 
 /* Media Queries */
-
 @media only screen and (max-width: 35.998rem) {
   .header-title {
     font-size: 2.5rem;
@@ -288,6 +294,12 @@ hr {
   }
   .header-subtitle {
     font-size: 1.25rem;
+  }
+  .about-image {
+    width: 100%;
+  }
+  .card-text.lead {
+    font-size: 0.9rem;
   }
 }
 
@@ -299,6 +311,12 @@ hr {
   .header-subtitle {
     font-size: 1.5rem;
   }
+  .about-image {
+    width: 75%;
+  }
+  .card-text.lead {
+    font-size: 1rem;
+  }
 }
 
 @media only screen and (min-width: 48rem) {
@@ -308,6 +326,12 @@ hr {
   }
   .header-subtitle {
     font-size: 1.75rem;
+  }
+  .about-image {
+    width: 50%;
+  }
+  .card-text.lead {
+    font-size: 1.1rem;
   }
 }
 
@@ -319,6 +343,12 @@ hr {
   .header-subtitle {
     font-size: 2rem;
   }
+  .about-image {
+    width: 50%;
+  }
+  .card-text.lead {
+    font-size: 1.2rem;
+  }
 }
 
 @media only screen and (min-width: 75rem) {
@@ -329,11 +359,10 @@ hr {
   .header-subtitle {
     font-size: 2.25rem;
   }
-}
-
-.todo-content {
-  font-family: 'Libre Franklin', sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+  .about-image {
+    width: 50%;
+  }
+  .card-text.lead {
+    font-size: 1.3rem;
+  }
 }
