@@ -87,7 +87,7 @@
     <!-- Destinations Section -->
     <figure class="text-center" id="destinations">
         <blockquote class="blockquote">
-            <h3>Destinations To Visit</h3>
+            <h3>Destinations To Visit</h3>s
         </blockquote>
     </figure>
     <section class="Destinations">
@@ -241,6 +241,86 @@
     </div>
     <hr>
 
+    <!-- Contact Us -->
+    <section>
+        <div class="container px-4 py-5 mb-5">
+            <div class="row">
+                <div class="col-lg-6 p-4 rounded" style="background-color: #f2f2f2;">
+                    <h2>Get in touch with us</h2>
+                    <p>If you have any place suggestions or need some help going around Cabuyao, don't be shy to drop us
+                        a message.</p>
+                    </p>
+                    <div class="d-flex flex-column gap-4">
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-telephone-fill me-2"></i>
+                            <span>+1 234 567 890</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-envelope-fill me-2"></i>
+                            <span>info@example.com</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-geo-alt-fill me-2"></i>
+                            <span>1234 Street, City, State, Country</span>
+                        </div>
+                    </div>
+                    <div class="embed-responsive embed-responsive-4by3 px-4 py-5">
+                        <iframe class="embed-responsive-item"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509577!2d144.95373531531643!3d-37.817209979751795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce6e0!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2s!4v1631233126325!5m2!1sen!2s"
+                            allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card p-4">
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="firstName" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="number" class="form-label">Number</label>
+                                <input type="tel" class="form-control" id="number" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="3" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+
+                    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="successModalLabel">Success</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    The suggestion form has been successfully submitted.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- About Us -->
     <div class="about-container">
         <figure class="text-center" id="destinations">
@@ -295,6 +375,7 @@
             </div>
         </section>
     </div>
+
 
     <!-- footer -->
     <footer class="footer-container text-center">
