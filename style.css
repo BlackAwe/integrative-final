@@ -150,6 +150,33 @@ hr {
   margin-bottom: 200px;
 }
 
+#about-header-container {
+  display: inline-block;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  padding: 10px;
+}
+
+#about-header-container:hover {
+  transform: translateY(-10px);
+  background-color: #f8f9fa;
+  border-radius: 10px;
+}
+
+#about {
+  text-decoration: underline;
+}
+
+#about:hover {
+  color: #072a9f;
+}
+
+.info-section {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
 .left-container,
 .right-container {
   display: grid;

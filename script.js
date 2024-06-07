@@ -61,18 +61,17 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// Showing the about us page
 document.addEventListener("DOMContentLoaded", function () {
   let aboutHeader = document.getElementById("about");
-  let infoSection = document.querySelector(".py-3.py-md-5.py-xl-8");
-
-  infoSection.style.display = "none"; // initially hide the information section
+  let infoSection = document.querySelector(".info-section");
 
   aboutHeader.addEventListener("click", function () {
-    if (infoSection.style.display === "none") {
-      infoSection.style.display = "block"; // show the information section
+    if (infoSection.style.opacity === "0") {
+      infoSection.style.opacity = "1";
+      infoSection.style.maxHeight = "1000px"; // adjust this value as needed
     } else {
-      infoSection.style.display = "none"; // hide the information section
+      infoSection.style.opacity = "0";
+      infoSection.style.maxHeight = "0";
     }
   });
 });
