@@ -1,19 +1,19 @@
-"use strict";
+'use strict';
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener('DOMContentLoaded', function () {
   // Get the forms
-  const registerForm = document.getElementById("registerForm");
+  const registerForm = document.getElementById('registerForm');
 
   // Define the fields
   const registerFields = [
-    "Username",
-    "Password",
-    "Email",
-    "FirstName",
-    "LastName",
-    "Address",
-    "Barangay",
-    "Zip",
+    'Username',
+    'Password',
+    'Email',
+    'FirstName',
+    'LastName',
+    'Address',
+    'Barangay',
+    'Zip',
   ];
 
   // Function to get form data
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const data = {};
     for (let field of fields) {
       const input = form.elements[field];
-      if (!input || input.value === "") {
+      if (!input || input.value === '') {
         alert(`Please fill in the ${field}`);
         return null;
       }
@@ -31,11 +31,16 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Register form submit event
-  registerForm.addEventListener("submit", function (event) {
+  registerForm.addEventListener('submit', function (event) {
     event.preventDefault();
     const data = getFormData(this, registerFields);
     if (data) {
-      localStorage.setItem("accountData", JSON.stringify(data));
+      localStorage.setItem('accountData', JSON.stringify(data));
+      // Show the modal
+      let successModal = new bootstrap.Modal(
+        document.getElementById('successModal')
+      );
+      successModal.show();
     }
   });
 });
