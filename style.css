@@ -363,3 +363,42 @@ hr {
     font-size: 2.25rem;
   }
 }
+
+.main-transaction{
+  background-color: rgb(255,255,255,0.1);
+  border-radius: 5px;
+  color: white;
+}
+
+.main-booking{
+  background-color: rgb(255,255,255,0.1);
+  border-radius: 5px;
+}
+
+
+.transaction-body{
+  background: linear-gradient(-45deg, #072a9f, #142451, #5a1616, #4646d2);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+.booking-button{
+  list-style-type: none;
+  font-family: 'Roboto Slab', serif;
+  font-optical-sizing: auto;
+  font-weight: 750;
+  font-style: normal;
+}
+
+.booking-title{
+  max-width: fit-content;
+  color: white;
+  list-style-type: none;
+  font-family: 'Roboto Slab', serif;
+  font-optical-sizing: auto;
+  font-weight: 750;
+  font-style: normal;
+}
+
+
+
