@@ -14,12 +14,14 @@
   </head>
 
   <body>
-    <div class="container">
-      <div class="row d-flex align-items-center justify-content-center vh-100">
-        <div class="col-lg-5 col-sm-10 mt-4 register-container">
+    <div class="container p-3">
+      <div
+        class="row d-flex align-items-center justify-content-center min-vh-100"
+      >
+        <div class="col-lg-5 col-md-8 col-sm-10 mt-4 register-container">
           <h3 class="text-center mb-4">Register</h3>
           <form class="row g-3" id="registerForm">
-            <div class="col-md-6">
+            <div class="col-12">
               <label for="registerFirstname" class="form-label"
                 >First Name</label
               >
@@ -30,7 +32,7 @@
                 name="FirstName"
               />
             </div>
-            <div class="col-md-6">
+            <div class="col-12">
               <label for="registerLastname" class="form-label">Last Name</label>
               <input
                 type="text"
@@ -39,7 +41,7 @@
                 name="LastName"
               />
             </div>
-            <div class="col-md-12">
+            <div class="col-12">
               <label for="registerEmail" class="form-label">Email</label>
               <input
                 type="email"
@@ -48,7 +50,7 @@
                 name="Email"
               />
             </div>
-            <div class="col-md-12">
+            <div class="col-12">
               <label for="registerUsername" class="form-label">Username</label>
               <input
                 type="text"
@@ -57,7 +59,7 @@
                 name="Username"
               />
             </div>
-            <div class="col-md-12">
+            <div class="col-12">
               <label for="registerPassword" class="form-label">Password</label>
               <input
                 type="password"
@@ -76,7 +78,7 @@
                 name="Address"
               />
             </div>
-            <div class="col-md-8">
+            <div class="col-12">
               <label for="registerBarangay" class="form-label">Barangay</label>
               <input
                 type="text"
@@ -85,7 +87,7 @@
                 name="Barangay"
               />
             </div>
-            <div class="col-md-4">
+            <div class="col-12">
               <label for="registerZip" class="form-label">Zip</label>
               <input
                 type="text"
@@ -94,8 +96,7 @@
                 name="Zip"
               />
             </div>
-
-            <div class="d-grid gap-2 col-6 mx-auto">
+            <div class="d-grid gap-2 col-12 mx-auto">
               <button type="submit" class="btn btn-primary btn-lg">
                 Sign in
               </button>
@@ -108,25 +109,37 @@
       </div>
     </div>
 
-<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="successModalLabel">Success</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        Registration successful!
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+    <div
+      class="modal fade"
+      id="successModal"
+      tabindex="-1"
+      aria-labelledby="successModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="successModalLabel">Success</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">Registration successful!</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-success"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-
-</body>
-</html>
 
     <script src="register.js"></script>
     <script
